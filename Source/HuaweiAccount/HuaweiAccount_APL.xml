@@ -117,7 +117,7 @@
                         accountJson.put("openId", account.getOpenId());
                         accountJson.put("unionId", account.getUnionId());
                     } catch (Exception e) {
-                        nativeOnException(Constants.LOGIN_ACTION, "Failed to parse data");
+                        nativeOnException(Constants.LOGIN_ACTION, "Failed to parse data"); //TODO deprecated nativeOnException (ue 5.4)
                     }
                     return accountJson.toString();
                 }
